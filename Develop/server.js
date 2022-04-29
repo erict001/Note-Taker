@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 // import routes from route folder; will look for index first
-const allRoutes = require("./routes");
+const allRoutes = require("../routes");
 app.use(allRoutes);
 
 app.listen(PORT, () => {
