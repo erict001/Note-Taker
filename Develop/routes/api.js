@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const fs = require('fs');
-const { v4: uuidv4 } = require('uuid');
 
 // get /api/notes to read db.json and return saved notes
 router.get('/', (req, res) => {
